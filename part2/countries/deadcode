@@ -1,0 +1,69 @@
+// import { useState, useEffect } from 'react'
+// import axios from 'axios'
+// import './App.css'
+
+// function App() {
+//   const [value, setValue] = useState('')
+//   const [country, setCountry] = useState('')
+//   const [result, setResult] = useState([])
+//   const [more, setMore] = useState('')
+
+//   useEffect(()=>{
+//       axios.get(`https://studies.cs.helsinki.fi/restcountries/api/all`).then((res)=>{
+      
+//       setResult(res.data)
+//       if (result.length > 10) {
+//         setMore('')
+//         console.log("theres more than 10 countries");
+//       }
+//       else {
+//         if (1 < result.length < 10){
+//           setMore('more')
+//           console.log("theres 10 or less countries");
+//         }
+//         else if (result.length === 1){
+//           setMore('equal')
+//           console.log(result.name.common);
+//         }
+//       }
+//     }
+
+//   )
+  
+//   },[country])
+
+//   const handleChange = (event) => {
+//     setValue(event.target.value)
+//     setCountry(value)
+//     console.log(listing);
+//   }
+  
+//   return (
+//     <div>
+//       <form action="">
+//         currency: <input value={value} onChange={handleChange} />
+//         <button type="submit">exchange rate</button>
+//         </form>
+//       <li>
+//           {
+//             result.filter(single => value == '' ? single 
+//             : single.name.common.includes(value.toLowerCase())).map(one => {
+//               setListing()
+//             })
+// }
+          
+        
+//       </li>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+// {/* // console.log(dola.name.common);
+              
+//               <li key={index}>
+//                     {dola.name.common}
+//                 </li>
+//             } */}
